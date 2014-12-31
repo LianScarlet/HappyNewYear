@@ -1,0 +1,83 @@
+body {
+	background: #000;
+	margin: 0;
+	position: relative;
+	font-family: 微軟正黑體;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+.main{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: #FFF;
+	overflow: hidden;
+}
+#page{
+	height: 100%;
+	width: 100%;
+	transform: translate3d(0,-200%,0);
+	transition: transform .2s ease-in-out;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+#tb{
+	transition: opacity .2s ease-in-out;
+}
+
+.box{
+	text-align: center;
+	margin: auto;
+}
+.box h1{
+	font-size: 40px;
+}
+.box #tb{
+	margin-top: -90px;
+}
+
+
+.web{
+	display: inline-block;
+	padding: 50px 30px;
+	margin: -30px 10px 0 10px;
+	background-color:rgba(150,150,150,0.8);
+	color: #FFF;
+	text-align: center;
+	border-radius: 5px;
+	width: 70px;
+	height: 100px;
+	vertical-align: top;
+	transition: transform .2s ease-in-out;
+}
+.web:hover{
+	background-color:rgba(170,170,170,0.8);
+	cursor: pointer;
+	transform: translate3d(0,-5%,0);
+	/*transform: scale(1.1);*/？
+
+}
+.web i{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.ab{
+	margin-top: -70px;
+	font-size: 25px;
+}
+.url{
+	color: #BCE6FE;
+	font-size: 20px;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 10px;
+}
